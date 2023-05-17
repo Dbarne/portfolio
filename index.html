@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,15 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="about-link" href="#about">About</a></li>
+                <li><a id="work-experience" href="#projects">Work Experience</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
+                <li><a id="linkedin-link" href="https://uk.linkedin.com/in/danielbarnett92">Linkedin</a></li>
             </ul>
         </nav>
     </header>
@@ -21,35 +24,72 @@
     <main>
         <section id="about">
             <h1>About Me</h1>
-            <p>Welcome to my portfolio! Automation engineer, working with Java, Selenium, Cucumber, JavaScript
-                HTML and CSS. 
-                In previous roles I have....
+            <p>Process-driven Senior Software Automation Engineer delivering measurable improvements to Quality
+                Assurance (QA)
+                processes through data-based decision-making. Optimises testing activities, analyses risk and
+                strengthens current procedures with a target of continuous improvement. Champions IT best practices and
+                policy adherence to maintain high standards across different projects.
             </p>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Work Experience</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1...</p>
+                <h3>Senior Software Automation Engineer, 08/2020 to Current
+                    Traka - Olney, Buckinghamshire</h3>
+                <ul id="trakaList">
+                    <li>Compiled and analysed software testing results to produce actionable insights, driving process
+                        improvements.</li>
+                    <li>Maintained, debugged and optimised automation programs.</li>
+                    <li>Trained developers and quality assurance team members in automation programs and processes.</li>
+                    <li>Refactored existing TestNG framework and improved the efficiency of existing tests.</li>
+                    <li>Integrated Zephyr API, Saucelabs and Docker into the existing framework.</li>
+                    <li>Created a proof of concept to drive visual testing within the existing framework.</li>
+                    <li>Maintained an Automation environment to ensure scripts ran overnight.</li>
+                    <li>Writing tests using Java, TestNG, and Cucumber framework.</li>
+                    <li>An understanding of REACT, Angular and DevExpress testing.</li>
+                    <li>Worked closely with the QA manager to provide training programs for Manual QA testers to upskill
+                        into Automation Engineers.</li>
+                </ul>
             </div>
             <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2...</p>
+                <h3>QA Software Tester, 06/2016 to 08/2020
+                    FLOOID (Formally PCMS) - Coventry, Warwickshire
+                </h3>
+                <ul id="flooidList">
+                    <li>Writing manual tests using Zephyr.</li>
+                    <li>Testing APIs using Postman.</li>
+                    <li>Creating XML and JSON data for API testing.</li>
+                    <li>Creating Virtual Environments for the QA team.</li>
+                    <li>Providing onsite support for customers to ensure the release testing runs smoothly.</li>
+                    <li>Training new Software Testers and upskilling them to learn how to use Postman and SQL.</li>
+                    <li>Prevented project delivery delays, using Jira to facilitate project tracking.</li>
+                    <li>Facilitated effective decision-making by proactively participating in daily scrum stand-ups.
+                    </li>
+                    <li>Outlined quality assurance objectives and priorities to guide department activities.</li>
+                    <li>Assessed program functionality against user requirements and established guidelines.</li>
+                    <li>Prepared and configured systems for testing.</li>
+                    <li>Oversaw focused testing processes to capture meaningful insights into current processes.</li>
+                </ul>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
             <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
+                <input id="name-input" type="text" placeholder="Your Name">
+                <input id="email-input" type="email" placeholder="Your Email">
+                <textarea id="message-area" placeholder="Message"></textarea>
+                <div class="buttons-container">
+                    <button id="submit-button" class="button-arounder" type="submit">Send</button>
+                </div>
             </form>
         </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
+<footer>
+    <a id="linkedin-icon" href="https://uk.linkedin.com/in/danielbarnett92" title="LinkedIn" class="btn btn-linkedin btn-lg"><img
+            src="images/linkedin.svg" alt="Linkedin SVG" /></a>
+</footer>
+
 </html>
