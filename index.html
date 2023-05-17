@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -24,7 +23,7 @@
     <main>
         <section id="about">
             <h1>About Me</h1>
-            <img src="images/me.jpg" title="Daniel Barnett" id="my-picture" width="300px" height="auto"/>
+            <img src="images/me.jpg" title="Daniel Barnett" id="my-picture" width="300px" height="auto" />
             <p>Process-driven Senior Software Automation Engineer delivering measurable improvements to Quality
                 Assurance (QA)
                 processes through data-based decision-making. Optimises testing activities, analyses risk and
@@ -64,7 +63,8 @@
                     <li>Creating Virtual Environments for the QA team.</li>
                     <li>Providing onsite support for customers to ensure the release testing runs smoothly.</li>
                     <li>Training new Software Testers and upskilling them to learn how to use Postman and SQL.</li>
-                    <li>Prevented work-experience delivery delays, using Jira to facilitate work-experience tracking.</li>
+                    <li>Prevented work-experience delivery delays, using Jira to facilitate work-experience tracking.
+                    </li>
                     <li>Facilitated effective decision-making by proactively participating in daily scrum stand-ups.
                     </li>
                     <li>Outlined quality assurance objectives and priorities to guide department activities.</li>
@@ -77,19 +77,23 @@
 
         <section id="contact">
             <h2>Contact Me</h2>
+            <div id="success-message"></div>
+            <div id="error-message"></div>
             <form>
                 <input id="name-input" type="text" placeholder="Your Name">
                 <input id="email-input" type="email" placeholder="Your Email">
                 <textarea id="message-area" placeholder="Message"></textarea>
-                <div class="buttons-container">
-                    <button id="submit-button" class="button-arounder" type="submit">Send</button>
-                </div>
+                <button id="buttons-container submit-button" class="button-arounder" type="submit">Send</button>
             </form>
         </section>
     </main>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </body>
 <footer>
-    <a id="linkedin-icon" href="https://uk.linkedin.com/in/danielbarnett92" title="LinkedIn" class="btn btn-linkedin btn-lg"><img
-            src="images/linkedin.svg" alt="Linkedin SVG" /></a>
+    <a id="linkedin-icon" href="https://uk.linkedin.com/in/danielbarnett92" title="LinkedIn"
+        class="btn btn-linkedin btn-lg"><img src="images/linkedin.svg" alt="Linkedin SVG" /></a>
 </footer>
+
 </html>
